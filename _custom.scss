@@ -1,0 +1,47 @@
+$bg-color: rgb(10,25,47);
+$green-color:rgb(133, 185, 133);
+$nav-text-color: rgb(163, 152, 152);
+$profile-name-color: rgb(218, 210, 210);
+
+@mixin section-styling{
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+@mixin subheading-styling {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+@mixin emphasized-words {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+@mixin empty-div{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+@mixin profile-img{
+    border-radius: 5px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 3rem;
+    left: 3.5rem;
+}
+@mixin button{
+    background-color: transparent;
+    border:2px solid rgb(133, 185, 133);
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+}
+@mixin project-btn{
+    @include button;
+    display: block;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding: 0.2rem 2rem;
+}
