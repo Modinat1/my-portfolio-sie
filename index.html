@@ -64,8 +64,8 @@
         <!-- ABOUT SECTION -->
         <section Id="about">
             <h3>About Me</h3>
-            <div class="about d-flex">
-            <div class="profile-info mx-5">
+            <div class="about row">
+            <div class="profile-info mx-5 col">
             <p>Hello there! My name is Modinat, my interest in web development started when i picked up html back in year 2020, after some friend's encouraged me to give software development a try</p>
             <p>Today, i am proficient in the use of html, css, javascript, react to build stuffs that lives on the web woohoo!!!</p>
             <div class="icons my-3">
@@ -75,7 +75,7 @@
                 <i class="fas fa-phone mx-3"></i>
             </div>
             </div>
-            <div class="img-container mx-5">
+            <div class="img-container mx-5 col">
                 <div class="empty-div"></div>
             <img class="profile-img" src="assets/images/Adesola-Modinat photo.jpg" alt="profile-picture">
             </div>  
@@ -85,28 +85,28 @@
         <!-- SKILLS SECTION -->
         <section id="skills">
             <h3>Skills</h3>
-            <div class="skills-container">
-                <div>
+            <div class="skills-container row">
+                <div class="col">
                      <i class="fas fa-file-code skills-icon"></i>
                     <p>html</p>
                 </div>
-                <div>
+                <div class="col">
                     <i class="fas fa-file-code skills-icon"></i>
                     <p>css</p>
                 </div>
-                <div>
+                <div class="col">
                     <i class="fab fa-bootstrap skills-icon"></i>
                     <p>bootstrap</p>
                 </div>
-                <div>
-                    <i class="fab fa-sass skills-icon"></i>
+                <div class="col">
+                    <i class="fab fa-sass skills-icon col"></i>
                     <p>saas</p>
                 </div>
-                <div>
+                <div class="col">
                     <i class="fab fa-js-square skills-icon"></i>
                     <p>javascript</p>
                 </div>
-                <div>
+                <div class="col">
                     <i class="fab fa-react skills-icon"></i>
                     <p>react</p>
                 </div>
@@ -116,65 +116,62 @@
     <!-- PROJECTS -->
     <section id="projects">
         <h3>Projects</h3>
-        <div class="project-container d-flex">
-    <div class="card mx-2" style="width: 30rem;">
-        <img src="assets/images/project-1.png" class="card-img-top" alt="project-screenshot">
+        <div class="project-container row">
+    <div class="card card-style mx-2 col">
+        <img src="assets/images/project-1.png" class="card-img-top project-img" alt="project-screenshot">
         <div class="card-body">
           <p class="card-text">An e-commerce landing-page, built with html,css and javascript.</p>
-          <button class="project-btn"><a href="#">Link</a></button>
+          <button class="project-btn"><a href="https://deenah-ecommerce.netlify.app/">Link</a></button>
         </div>
       </div>
 
-      <div class="card mx-2" style="width: 30rem;">
-        <img src="assets/images/project-2.png" class="card-img-top" alt="project-screenshot">
+      <div class="card card-style mx-2 col">
+        <img src="assets/images/project-2.png" class="card-img-top project-img" alt="project-screenshot">
         <div class="card-body">
           <p class="card-text">A clone of fylo landing page.</p>
-          <button class="project-btn"><a href="#">Link</a></button>
+          <button class="project-btn"><a href="https://fylolandingpagee.netlify.app/">Link</a></button>
         </div>
       </div>
 
-      <div class="card mx-2" style="width: 30rem;">
-        <img src="assets/images/project-3.png" class="card-img-top" alt="project-screenshot">
+      <div class="card card-style mx-2 col">
+        <img src="assets/images/project-3.png" class="card-img-top project-img" alt="project-screenshot">
         <div class="card-body">
           <p class="card-text">A joke generator app, that fetches jokes from an Api.</p>
           <button class="project-btn"><a href="#">Link</a></button>
         </div>
       </div>
     </div>
+  </select>
 
         <!-- CONTACT SECTION -->
         <section id="contacts">
-            <h3>Contact</h3>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" aria-describedby="FullNameHelp" placeholder="Enter your Full Name">
-                </div>
+        <h3>Contacts</h3>
+        <form class="form-container">
+          <div class="form-list">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control my-2" placeholder="FullName">
+          </div>
 
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email">
-                  </div>
+          <div class="form-list">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control my-2" placeholder="Email">
+          </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter your phone number">
-                  </div>
+          <div class="form-list">
+          <label for="PhoneNumber" class="form-label">Phone Number</label>
+          <input type="number" class="form-control my-2" placeholder="PhoneNumber">
+          </div>
 
-                  <div class="mb-3">
-                      <label for="Message" class="form-label">Message</label>
-                      <textarea name="textarea" cols="90" rows="10" placeholder="Enter a message"></textarea>
-                  </div>
-                
-                <button type="submit" class="btn d-block mx-auto bg-success">Submit</button>
-              </form>
-        </section>
-
-
-
+          <div class="form-list">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" class="form-control my-2"></textarea>
+          </div>
+          <button type="submit">Get in touch</button>
+        </form>
+      </section>
 
     
-    </section>
+    
 
 
 
